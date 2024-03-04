@@ -1,0 +1,72 @@
+{
+  "header": {
+    "logo": {
+      "path": "home",
+      "label": "CarpTravel"
+    },
+    "btnOpenMenu": "menu",
+    "btnCloseMenu": "close",
+    "navLinks": [
+      {
+        "path": "about",
+        "label": "About"
+      },
+      {
+        "path": "services",
+        "label": "Services"
+      },
+      {
+        "path": "career",
+        "label": "Career"
+      },
+      {
+        "path": "gallery",
+        "label": "Gallery"
+      },
+      {
+        "path": "contacts",
+        "label": "Contacts"
+      }
+    ]
+  },
+
+  "hero": {
+    "spanHero": {
+      "first": "7",
+      "second": "days",
+      "third": "journey"
+    },
+    "title": {
+      "firstTitle": "Uncover",
+      "secondTitle": "Carpathian’s Secrets"
+    },
+    "list": [
+      {
+        "id": 1,
+        "label": "Hoverla"
+      },
+      {
+        "id": 2,
+        "label": "Yaremche"
+      },
+      {
+        "id": 3,
+        "label": "Zakarpattia"
+      },
+      {
+        "id": 4,
+        "label": "Vorokhta"
+      },
+      {
+        "id": 5,
+        "label": "Synevyr Lake"
+      },
+      {
+        "id": 6,
+        "label": "Bukovel"
+      }
+    ],
+    "description": "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
+    "btnHero": "join now"
+  }
+}
