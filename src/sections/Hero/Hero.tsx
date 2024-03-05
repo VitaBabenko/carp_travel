@@ -9,11 +9,9 @@ export const Hero = () => {
     <section className={`${styles.bg_section} h-full overflow-hidden`}>
       <div className="container mx-auto">
         <div className="flex flex-col items-end">
-          <div>
-            <span className="text-[37px] not-italic uppercase font-medium leading-[normal] text-main-color">
-              {spanHero.first}
-            </span>
-            <span className="text-[37px] not-italic uppercase font-thin tracking-[1.665px] leading-[normal] text-main-color">
+          <div className="text-[37px] not-italic uppercase font-medium leading-[normal] text-main-color">
+            <span>{spanHero.first}</span>
+            <span className="font-thin tracking-[1.665px] mr-[6px]">
               {spanHero.second}
             </span>
           </div>
@@ -22,9 +20,7 @@ export const Hero = () => {
           </p>
         </div>
         <h1 className="flex flex-col mb-[24px] text-[40px] not-italic uppercase font-thin leading-[1.4] tracking-[-1.6px] text-main-color">
-          <span className="text-[40px] not-italic uppercase font-medium leading-[1.4] tracking-[-1.6px] text-main-color">
-            {title.firstTitle}
-          </span>
+          <span className="font-medium">{title.firstTitle}</span>
           <span>{title.secondTitle}</span>
           <span>{title.thirdTitle}</span>
         </h1>

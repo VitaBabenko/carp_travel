@@ -69,5 +69,28 @@
     ],
     "description": "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
     "btnHero": "join now"
+  },
+  "about": {
+    "titleAbout": {
+      "label": "WHO",
+      "labelSpan": "WE ARE"
+    },
+    "firstDescription": {
+      "labelSpan": "a team of enthusiasts",
+      "label": "who are fully committed to the mission of creating unforgettable and extraordinary trips to the most beautiful parts of the Carpathians. Our goal is not just to show you the natural wonders of the mountains, but to provide you with a deep immersion in their magical atmosphere."
+    },
+    "secondDescription": {
+      "labelSpan": "We believe",
+      "label": "that nature has the power to inspire, strengthen character and provide new perspectives. Therefore, each of our tours is aimed at unlocking your potential, enriching your spiritual world and creating unforgettable memories."
+    },
+    "littleTitle": {
+      "firstTitle": "From vacationers",
+      "secondTitle": "to active travelers",
+      "thirdTitle": "we have a tour for everyone."
+    },
+    "thirdDescription": {
+      "labelSpan": "We use methods",
+      "label": "that are time-tested and proven. Our expert guides with in-depth knowledge of the Carpathian landscapes lead you safely through the mysteries of these mountains."
+    }
   }
 }
