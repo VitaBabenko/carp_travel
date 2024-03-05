@@ -9,16 +9,18 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: "320px",
+      xs: "100vw",
+      sm: "480px",
       md: "768px",
-      lg: "1280px",
-      xl: "1440px",
+      lg: "1440px",
     },
     extend: {
       container: {
         padding: {
-          sm: "1.25rem",
-          md: "2rem",
+          xs: "20px",
+          sm: "20px",
+          md: "32px",
+          lg: "104px",
         },
       },
       colors: {
