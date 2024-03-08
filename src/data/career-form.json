@@ -1,0 +1,80 @@
+{
+  "name": {
+    "name": "name",
+    "label": "Full name",
+    "placeholder": "John Smith",
+    "validation": {
+      "required": {
+        "value": true,
+        "message": "Mandatory field for entry!"
+      },
+      "pattern": {
+        "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-$))[A-Za-z' -]+$",
+        "message": "You can only enter letters!"
+      }
+    }
+  },
+  "email": {
+    "name": "email",
+    "label": "E-mail",
+    "placeholder": "johnsmith@email.com",
+    "validation": {
+      "required": {
+        "value": true,
+        "message": "Mandatory field for entry!"
+      },
+      "pattern": {
+        "value": "^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$",
+        "message": "Invalid email!"
+      }
+    }
+  },
+  "position": {
+    "name": "position",
+    "label": "Position",
+    "placeholder": "Movie maker",
+    "validation": {
+      "required": {
+        "value": true,
+        "message": "Mandatory field for entry!"
+      },
+      "pattern": {
+        "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-$))[A-Za-z' -]+$",
+        "message": "You can only enter letters!"
+      }
+    }
+  },
+  "phone": {
+    "name": "phone",
+    "label": "Phone",
+    "placeholder": "         (097) 12 34 567",
+    "validation": {
+      "required": {
+        "value": true,
+        "message": "Mandatory field for entry"
+      },
+      "pattern": {
+        "label": "+38 (###) ## ## ###",
+        "message": "You must enter at least 10 numbers!"
+      }
+    }
+  },
+  "message": {
+    "name": "message",
+    "label": "Message"
+  },
+  "checkbox": {
+    "name": "checkbox",
+    "label": "I confirm my consent to the processing of personal data.",
+    "validation": {
+      "required": {
+        "value": true,
+        "message": "You must confirm your consent!"
+      }
+    }
+  },
+  "btn": {
+    "name": "btn",
+    "label": "send"
+  }
+}

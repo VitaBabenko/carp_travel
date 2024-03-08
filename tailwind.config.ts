@@ -12,7 +12,8 @@ const config: Config = {
       xs: "100vw",
       sm: "480px",
       md: "768px",
-      lg: "1440px",
+      lg: "1024px",
+      xl: "1440px",
     },
     extend: {
       container: {
@@ -20,7 +21,8 @@ const config: Config = {
           xs: "20px",
           sm: "20px",
           md: "32px",
-          lg: "104px",
+          lg: "32px",
+          xl: "104px",
         },
       },
       colors: {

@@ -70,6 +70,7 @@
     "description": "We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!",
     "btnHero": "join now"
   },
+
   "about": {
     "titleAbout": {
       "label": "WHO",
@@ -91,6 +92,60 @@
     "thirdDescription": {
       "labelSpan": "We use methods",
       "label": "that are time-tested and proven. Our expert guides with in-depth knowledge of the Carpathian landscapes lead you safely through the mysteries of these mountains."
+    }
+  },
+
+  "career": {
+    "titleCareer": {
+      "label": "Choose",
+      "labelSpan": "US"
+    },
+    "description": "Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission.",
+    "listTitle": "Why us ?",
+    "list": [
+      {
+        "id": 1,
+        "label": "Professional development",
+        "description": "We offer growth opportunities and a creative environment to nurture your talents."
+      },
+      {
+        "id": 2,
+        "label": "Teamwork",
+        "description": "Join our close-knit family, where support and inspiration abound."
+      },
+      {
+        "id": 3,
+        "label": "Stimulating work environment",
+        "description": "Flexibility and remote options for a comfortable experience."
+      },
+      {
+        "id": 4,
+        "label": "Exciting challenges",
+        "description": "Unleash your potential through unforgettable projects showcasing Carpathian beauty."
+      }
+    ],
+    "titleFirstForm": "Don't miss your opportunity!",
+    "titleSecondForm": "Fill out the form right now and join our team!"
+  },
+  "contacts": {
+    "titleContacts": {
+      "label": "contact",
+      "labelSpan": "us"
+    },
+    "listContacts": {
+      "phone": {
+        "label": "Phone number",
+        "firstPhone": "+38 (098) 12 34 567",
+        "secondPhone": "+38 (073) 12 34 567"
+      },
+      "email": "support@carptravel.com",
+      "socials": {
+        "label": "Follow us",
+        "firstSocial": "facebook",
+        "secondSocial": "instagram",
+        "thirdSocial": "youtube",
+        "forthSocial": "tiktok"
+      }
     }
   }
 }
