@@ -2,15 +2,15 @@ import data from "@/data/common.json";
 
 import styles from "./About.module.css";
 
-const {
-  titleAbout,
-  firstDescription,
-  secondDescription,
-  littleTitle,
-  thirdDescription,
-} = data.about;
-
 export const About = () => {
+  const {
+    titleAbout,
+    firstDescription,
+    secondDescription,
+    littleTitle,
+    thirdDescription,
+  } = data.about;
+
   return (
     <section className={styles.bg_section}>
       <div className="container mx-auto">

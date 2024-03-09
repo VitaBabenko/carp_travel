@@ -4,16 +4,16 @@ import data from "@/data/common.json";
 
 import styles from "./Career.module.css";
 
-const {
-  titleCareer,
-  description,
-  listTitle,
-  list,
-  titleFirstForm,
-  titleSecondForm,
-} = data.career;
-
 export const Career = () => {
+  const {
+    titleCareer,
+    description,
+    listTitle,
+    list,
+    titleFirstForm,
+    titleSecondForm,
+  } = data.career;
+
   return (
     <>
       <section className={`${styles.bg_section} h-full overflow-hidden`}>

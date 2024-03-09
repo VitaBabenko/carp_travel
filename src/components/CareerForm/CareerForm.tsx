@@ -12,8 +12,6 @@ import { CareerFormInputs } from "@/types";
 
 import dataCareerFrom from "@/data/career-form.json";
 
-const { phone, checkbox } = dataCareerFrom;
-
 export const CareerForm = () => {
   const {
     register,
@@ -40,6 +38,7 @@ export const CareerForm = () => {
     setValue(phone.name, "");
   };
 
+  const { phone, checkbox } = dataCareerFrom;
   const checkboxInput = watch(checkbox.name);
   const phoneInput = watch(phone.name);
 
