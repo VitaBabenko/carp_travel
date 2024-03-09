@@ -4,3 +4,5 @@ export * from "./FormInput";
 export * from "./FormTextarea";
 export * from "./CheckboxForm";
 export * from "./BtnForm";
+export * from "./ContactsInfo";
+export * from "./ContactsForm";

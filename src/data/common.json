@@ -138,7 +138,10 @@
         "firstPhone": "+38 (098) 12 34 567",
         "secondPhone": "+38 (073) 12 34 567"
       },
-      "email": "support@carptravel.com",
+      "email": {
+        "label": "E-mail",
+        "firstEmail": "support@carptravel.com"
+      },
       "socials": {
         "label": "Follow us",
         "firstSocial": "facebook",

@@ -1,0 +1,13 @@
+.bg_section {
+  background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+    url("~/public/images/bg-images/bg-contacts.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 56px;
+  padding-bottom: 54px;
+
+  /* @media screen and (min-width: 480px) {
+     background-position: center;
+   } */
+}

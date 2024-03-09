@@ -1,6 +1,6 @@
 .bg_section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-    url("~/public/images/bg-about-mobile.webp");
+    url("~/public/images/bg-images/bg-about-mobile.webp");
   background-repeat: no-repeat;
   background-position-x: 75%;
   background-size: cover;

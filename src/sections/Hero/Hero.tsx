@@ -2,9 +2,9 @@ import data from "@/data/common.json";
 
 import styles from "./Hero.module.css";
 
-const { spanHero, title, list, description, btnHero } = data.hero;
-
 export const Hero = () => {
+  const { spanHero, title, list, description, btnHero } = data.hero;
+
   return (
     <section className={`${styles.bg_section} h-full overflow-hidden`}>
       <div className="container mx-auto">
