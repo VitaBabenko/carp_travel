@@ -19,11 +19,11 @@ export const Hero = () => {
             {spanHero.third}
           </p>
         </div>
-        <h1 className="flex flex-col mb-[24px] text-[40px] not-italic uppercase font-thin leading-[1.4] tracking-[-1.6px] text-main-color">
+        <h2 className="flex flex-col mb-[24px] text-[40px] not-italic uppercase font-thin leading-[1.4] tracking-[-1.6px] text-main-color">
           <span className="font-medium">{title.firstTitle}</span>
           <span>{title.secondTitle}</span>
           <span>{title.thirdTitle}</span>
-        </h1>
+        </h2>
         <ul className="flex flex-wrap gap-[3px] w-[180px] mb-[24px]">
           {list.map(({ id, label }) => (
             <li
