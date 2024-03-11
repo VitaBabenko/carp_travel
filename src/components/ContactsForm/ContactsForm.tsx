@@ -8,7 +8,7 @@ import { FormInput, FormTextarea, BtnForm } from "@/components";
 
 import { CareerFormInputs } from "@/types";
 
-import dataCareerFrom from "@/data/career-form.json";
+import dataCareerFrom from "@/data/form.json";
 
 export const ContactsForm = () => {
   const {
@@ -35,28 +35,35 @@ export const ContactsForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-      <FormInput
-        register={register}
-        errors={errors}
-        config={dataCareerFrom.name}
-        stylesForm="mb-[25px]"
-      />
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col md:flex-row md:gap-5"
+    >
+      <div>
+        <FormInput
+          register={register}
+          errors={errors}
+          config={dataCareerFrom.name}
+          stylesForm="mb-[25px] md:w-[221px] md:mb-[28px]"
+        />
 
-      <FormInput
-        register={register}
-        errors={errors}
-        config={dataCareerFrom.email}
-        stylesForm="mb-[24px]"
-      />
+        <FormInput
+          register={register}
+          errors={errors}
+          config={dataCareerFrom.email}
+          stylesForm="mb-[24px] md:w-[221px] md:mb-0"
+        />
+      </div>
 
-      <FormTextarea
-        register={register}
-        config={dataCareerFrom.message}
-        stylesForm="mb-[16px]"
-      />
+      <div>
+        <FormTextarea
+          register={register}
+          config={dataCareerFrom.message}
+          stylesForm="mb-[16px] md:w-[463px] md:h-[221px]"
+        />
 
-      <BtnForm data={dataCareerFrom.btn} />
+        <BtnForm data={dataCareerFrom.btn} />
+      </div>
       <Toaster />
     </form>
   );

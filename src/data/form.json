@@ -6,11 +6,11 @@
     "validation": {
       "required": {
         "value": true,
-        "message": "Mandatory field for entry!"
+        "message": "Mandatory"
       },
       "pattern": {
         "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-$))[A-Za-z' -]+$",
-        "message": "You can only enter letters!"
+        "message": "Only letters"
       }
     }
   },
@@ -21,11 +21,11 @@
     "validation": {
       "required": {
         "value": true,
-        "message": "Mandatory field for entry!"
+        "message": "Mandatory"
       },
       "pattern": {
         "value": "^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$",
-        "message": "Invalid email!"
+        "message": "Invalid email"
       }
     }
   },
@@ -36,11 +36,11 @@
     "validation": {
       "required": {
         "value": true,
-        "message": "Mandatory field for entry!"
+        "message": "Mandatory"
       },
       "pattern": {
         "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-$))[A-Za-z' -]+$",
-        "message": "You can only enter letters!"
+        "message": "Only letters"
       }
     }
   },
@@ -51,11 +51,11 @@
     "validation": {
       "required": {
         "value": true,
-        "message": "Mandatory field for entry"
+        "message": "Mandatory"
       },
       "pattern": {
         "label": "+38 (###) ## ## ###",
-        "message": "You must enter at least 10 numbers!"
+        "message": "10 numbers are required"
       }
     }
   },
@@ -69,7 +69,7 @@
     "validation": {
       "required": {
         "value": true,
-        "message": "You must confirm your consent!"
+        "message": "Confirmation required"
       }
     }
   },
