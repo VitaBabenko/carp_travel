@@ -127,6 +127,14 @@
     "titleFirstForm": "Don't miss your opportunity!",
     "titleSecondForm": "Fill out the form right now and join our team!"
   },
+
+  "gallery": {
+    "titleGallery": {
+      "label": "our",
+      "labelSpan": "gallery"
+    }
+  },
+
   "contacts": {
     "titleContacts": {
       "label": "contact",
