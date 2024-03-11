@@ -11,7 +11,7 @@ export const CheckboxForm: React.FC<FormInputProps> = ({
 }) => {
   const { name, label, validation } = config;
   return (
-    <label className="relative cursor-pointer flex gap-[18px] text-[12px] not-italic font-extralight leading-[1.8] text-main-color mb-4 md:mb-0 md:w-[220px]">
+    <label className="relative cursor-pointer flex gap-[18px] text-[12px] not-italic font-extralight leading-[1.8] text-main-color mb-4 md:mb-0 md:w-[220px] lg:leading-6 lg:w-[290px]">
       <input
         className="invisible"
         aria-label="consent confirmation checkbox"

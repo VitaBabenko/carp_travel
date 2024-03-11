@@ -11,12 +11,14 @@ export const Contacts = () => {
     <section id="contacts" className={`${styles.bg_section} h-full`}>
       <div className="container mx-auto">
         <HeadLineSection
-          stylesTitle="mb-9"
+          stylesTitle="mb-9 lg:mb-[71px]"
           label={titleContacts.label}
           labelSpan={titleContacts.labelSpan}
         />
-        <ContactsInfo />
-        <ContactsForm />
+        <div className="lg:flex lg:gap-[178px] xl:gap-[277px] lg:ml-auto lg:mr-0">
+          <ContactsInfo />
+          <ContactsForm />
+        </div>
       </div>
     </section>
   );

@@ -5,9 +5,9 @@ export const ContactsInfo = () => {
   const { listContacts } = data.contacts;
 
   return (
-    <ul className="flex flex-col mb-[12px] md:flex-row md:gap-[90px] md:mb-16">
+    <ul className="flex flex-col mb-[12px] md:flex-row md:gap-[90px] md:mb-14 lg:flex-col lg:mb-0">
       <div>
-        <li className="flex gap-[20px] justify-end mb-6">
+        <li className="flex gap-[20px] justify-end mb-6 lg:mb-14">
           <ul>
             <li>
               <Link
@@ -30,7 +30,7 @@ export const ContactsInfo = () => {
             {listContacts.phone.label}
           </p>
         </li>
-        <li className="flex gap-[20px] justify-end mb-[26px]">
+        <li className="flex gap-[20px] justify-end mb-[26px] lg:mb-[100px]">
           <Link
             href={`mailto:${listContacts.email.firstEmail}`}
             className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
@@ -42,8 +42,8 @@ export const ContactsInfo = () => {
           </p>
         </li>
       </div>
-      <li className="flex gap-[20px] justify-end">
-        <p className="text-[12px] not-italic font-extralight leading-5 text-main-color">
+      <li className="flex gap-[20px] justify-end lg:flex-row-reverse lg:justify-start">
+        <p className="text-[12px] not-italic font-extralight leading-5 text-main-color lg:w-[81px]">
           {listContacts.socials.label}
         </p>
         <ul className="w-[81px]">
