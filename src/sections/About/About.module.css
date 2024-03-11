@@ -1,13 +1,31 @@
 .bg_section {
   background-image: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%),
-    url("~/public/images/bg-images/bg-about-mobile.webp");
+    url("~/public/images/bg-images/bg-about-tablet.webp");
   background-repeat: no-repeat;
-  background-position-x: 75%;
+  background-position-x: 25%;
   background-size: cover;
   padding-top: 55px;
   padding-bottom: 54px;
+}
 
-  @media screen and (min-width: 480px) {
-    background-position: center;
+@media screen and (min-width: 480px) {
+  .bg_section {
+    background-position-x: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg_section {
+    background-image: linear-gradient(
+        180deg,
+        #001826 0%,
+        rgba(0, 37, 49, 0) 100%
+      ),
+      url("~/public/images/bg-images/bg-about.webp");
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }

@@ -6,8 +6,11 @@
   background-size: cover;
   padding-top: 56px;
   padding-bottom: 54px;
+}
 
-  /* @media screen and (min-width: 480px) {
-     background-position: center;
-   } */
+@media screen and (min-width: 768px) {
+  .bg_section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }

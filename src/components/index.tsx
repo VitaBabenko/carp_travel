@@ -1,4 +1,6 @@
 export * from "./Header";
+export * from "./BtnJoin";
+export * from "./HeadLineSection";
 export * from "./CareerForm";
 export * from "./FormInput";
 export * from "./FormTextarea";

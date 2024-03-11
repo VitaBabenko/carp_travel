@@ -1,3 +1,5 @@
+import { BtnJoin } from "@/components";
+
 import data from "@/data/common.json";
 
 import styles from "./Hero.module.css";
@@ -8,41 +10,40 @@ export const Hero = () => {
   return (
     <section className={`${styles.bg_section} h-full overflow-hidden`}>
       <div className="container mx-auto">
-        <div className="flex flex-col items-end">
-          <div className="text-[37px] not-italic uppercase font-medium leading-[normal] text-main-color">
-            <span>{spanHero.first}</span>
-            <span className="font-thin tracking-[1.665px] mr-[6px]">
-              {spanHero.second}
-            </span>
+        <div className="md:flex flex-row-reverse justify-between md:mb-[68px]">
+          <div className="flex flex-col items-end">
+            <div className="text-[37px] not-italic uppercase font-medium leading-[normal] text-main-color md:text-[67px]">
+              <span>{spanHero.first}</span>
+              <span className="font-thin tracking-[1.665px] mr-[6px] md:tracking-[8.71px]">
+                {spanHero.second}
+              </span>
+            </div>
+            <p className="text-[12px] not-italic uppercase font-light tracking-[9.48px] leading-[normal] text-main-color mb-[24px] md:text-[14px] md:tracking-[25.9px]">
+              {spanHero.third}
+            </p>
           </div>
-          <p className="text-[12px] not-italic uppercase font-light tracking-[9.48px] leading-[normal] text-main-color mb-[24px]">
-            {spanHero.third}
-          </p>
+          <h1 className="flex flex-col mb-[24px] text-[40px] not-italic uppercase font-thin leading-[1.4] tracking-[-1.6px] text-main-color md:text-[67px] md:leading-[normal] md:tracking-[-2.68px] md:mb-0">
+            <span className="font-medium">{title.firstTitle}</span>
+            <span>{title.secondTitle}</span>
+            <span>{title.thirdTitle}</span>
+          </h1>
         </div>
-        <h2 className="flex flex-col mb-[24px] text-[40px] not-italic uppercase font-thin leading-[1.4] tracking-[-1.6px] text-main-color">
-          <span className="font-medium">{title.firstTitle}</span>
-          <span>{title.secondTitle}</span>
-          <span>{title.thirdTitle}</span>
-        </h2>
-        <ul className="flex flex-wrap gap-[3px] w-[180px] mb-[24px]">
-          {list.map(({ id, label }) => (
-            <li
-              key={id}
-              className={`${styles.list_item} text-[10px] not-italic font-extralight leading-4 text-main-color`}
-            >
-              {label}
-            </li>
-          ))}
-        </ul>
-        <p className="text-[14px] not-italic font-extralight leading-[1.6] text-main-color text-justify mb-[26.5px]">
-          {description}
-        </p>
-        <button
-          className="text-[18px] not-italic font-bold leading-[2.7] text-main-color uppercase block w-[280px] mx-auto bg-white/[0.10] px-16 py-[18px] cursor-pointer hover:bg-white/[0.20] transition-all"
-          type="button"
-        >
-          {btnHero}
-        </button>
+        <div className="flex flex-col gap-6 md:flex-row justify-between md:relative">
+          <ul className="flex flex-wrap gap-[3px] w-[180px] md:w-[265px]">
+            {list.map(({ id, label }) => (
+              <li
+                key={id}
+                className={`${styles.list_item} text-[10px] not-italic font-extralight leading-4 text-main-color md:text-[14px] md:tracking-[1.26px]`}
+              >
+                {label}
+              </li>
+            ))}
+          </ul>
+          <p className="text-[14px] not-italic font-extralight leading-[1.6] text-main-color text-justify md:text-[16px] md:absolute md:w-[230px] md:bottom-[75px] md:right-0">
+            {description}
+          </p>
+          <BtnJoin label={btnHero} />
+        </div>
       </div>
     </section>
   );

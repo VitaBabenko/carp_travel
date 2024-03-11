@@ -23,7 +23,7 @@ export const FormInput: React.FC<FormInputProps> = ({
         aria-required="true"
         aria-invalid={isError ? "true" : "false"}
         aria-describedby={isError ? "errorName" : undefined}
-        className="bg-white/[0.05]  pl-2 pr-[50px] text-[20px] not-italic font-extralight leading-6 placeholder:text-[20px] placeholder:opacity-[0.2]"
+        className="bg-white/[0.05]  pl-2 pr-[50px] text-[20px] not-italic font-extralight leading-6 placeholder:text-[20px] placeholder:opacity-[0.2] md:h-6"
         style={{
           color: isError ? "#FF5757" : "#FFF",
         }}
