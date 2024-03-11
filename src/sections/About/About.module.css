@@ -29,3 +29,10 @@
     padding-bottom: 64px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .bg_section {
+    padding-top: 106px;
+    padding-bottom: 104px;
+  }
+}

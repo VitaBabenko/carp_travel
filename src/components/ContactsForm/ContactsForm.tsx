@@ -37,21 +37,21 @@ export const ContactsForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col md:flex-row md:gap-5"
+      className="flex flex-col md:flex-row md:gap-5 lg:flex-col lg:w-[607px]"
     >
-      <div>
+      <div className="lg:flex lg:gap-[20px] lg:mb-10">
         <FormInput
           register={register}
           errors={errors}
           config={dataCareerFrom.name}
-          stylesForm="mb-[25px] md:w-[221px] md:mb-[28px]"
+          stylesForm="mb-[25px] md:w-[221px] md:mb-[28px] lg:w-[293px] lg:mb-0"
         />
 
         <FormInput
           register={register}
           errors={errors}
           config={dataCareerFrom.email}
-          stylesForm="mb-[24px] md:w-[221px] md:mb-0"
+          stylesForm="mb-[24px] md:w-[221px] md:mb-0 lg:w-[293px]"
         />
       </div>
 
@@ -59,7 +59,7 @@ export const ContactsForm = () => {
         <FormTextarea
           register={register}
           config={dataCareerFrom.message}
-          stylesForm="mb-[16px] md:w-[463px] md:h-[221px]"
+          stylesForm="mb-[16px] md:w-[463px] md:h-[221px] lg:w-[100%] lg:mb-[24px]"
         />
 
         <BtnForm data={dataCareerFrom.btn} />

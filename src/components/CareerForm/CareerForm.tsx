@@ -43,28 +43,31 @@ export const CareerForm = () => {
   const phoneInput = watch(phone.name);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col md:gap-4">
-      <div className="md:flex gap-5">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col md:gap-4 lg:gap-6"
+    >
+      <div className="md:flex gap-5 lg:gap-6">
         <div>
           <FormInput
             register={register}
             errors={errors}
             config={dataCareerFrom.name}
-            stylesForm="mb-4 md:w-[221px]"
+            stylesForm="mb-4 md:w-[221px] lg:w-[260px] xl:w-[290px]"
           />
 
           <FormInput
             register={register}
             errors={errors}
             config={dataCareerFrom.email}
-            stylesForm="mb-4 md:w-[221px]"
+            stylesForm="mb-4 md:w-[221px] lg:w-[260px] xl:w-[290px]"
           />
 
           <FormInput
             register={register}
             errors={errors}
             config={dataCareerFrom.position}
-            stylesForm="mb-4 md:w-[221px]"
+            stylesForm="mb-4 md:w-[221px] lg:w-[260px] xl:w-[290px]"
           />
 
           <label
@@ -87,7 +90,7 @@ export const CareerForm = () => {
                     <PatternFormat
                       aria-required="true"
                       aria-invalid={errors.phone ? "true" : "false"}
-                      className="w-[100%] bg-white/[0.05]  pl-2 pr-[50px] text-[20px] not-italic font-extralight leading-6 placeholder:text-[20px] placeholder:opacity-[0.2] md:w-[221px]"
+                      className="w-[100%] bg-white/[0.05]  pl-2 pr-[50px] text-[20px] not-italic font-extralight leading-6 placeholder:text-[20px] placeholder:opacity-[0.2] md:w-[221px] lg:w-[260px] xl:w-[290px]"
                       style={{
                         color: errors.phone ? "#FF5757" : "#FFF",
                       }}
@@ -121,7 +124,7 @@ export const CareerForm = () => {
         <FormTextarea
           register={register}
           config={dataCareerFrom.message}
-          stylesForm="mb-[18px] h-[196px] md:h-[228px] md:w-[219px] md:mb-0 md:h-[220px]"
+          stylesForm="mb-[18px] h-[196px] md:h-[228px] md:w-[219px] md:mb-0 md:h-[220px] lg:w-[259px] lg:h-[219px] xl:w-[292px]"
         />
       </div>
 

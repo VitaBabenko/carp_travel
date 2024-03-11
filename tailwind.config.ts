@@ -12,7 +12,7 @@ const config: Config = {
       xs: "100vw",
       sm: "480px",
       md: "768px",
-      lg: "1024px",
+      lg: "1280px",
       xl: "1440px",
     },
     extend: {
@@ -21,7 +21,7 @@ const config: Config = {
           xs: "20px",
           sm: "20px",
           md: "32px",
-          lg: "32px",
+          lg: "104px",
           xl: "104px",
         },
       },
