@@ -1,5 +1,6 @@
 export type BtnProps = {
-  label: string;
+  label?: string;
+  type: "submit" | "button";
   btnStyle?: string;
-  onClickBtn?: () => void;
+  onClick?: () => void;
 };
