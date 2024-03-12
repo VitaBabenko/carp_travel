@@ -1,29 +1,38 @@
 {
   "header": {
     "logo": {
-      "path": "home",
+      "icon": "/icons/logo.svg",
+      "alt": "logo icon",
+      "path": "hero",
       "label": "CarpTravel"
     },
-    "btnOpenMenu": "menu",
-    "btnCloseMenu": "close",
+    "btnMenu": {
+      "open": "menu",
+      "close": "close"
+    },
     "navLinks": [
       {
+        "id": 1,
         "path": "about",
         "label": "About"
       },
       {
+        "id": 2,
         "path": "services",
         "label": "Services"
       },
       {
+        "id": 3,
         "path": "career",
         "label": "Career"
       },
       {
+        "id": 4,
         "path": "gallery",
         "label": "Gallery"
       },
       {
+        "id": 5,
         "path": "contacts",
         "label": "Contacts"
       }

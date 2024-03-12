@@ -16,7 +16,10 @@ export const Career = () => {
 
   return (
     <>
-      <section className={`${styles.bg_section} h-full overflow-hidden`}>
+      <section
+        id="career"
+        className={`${styles.bg_section} h-full overflow-hidden`}
+      >
         <div className="container mx-auto">
           <div className="flex flex-col gap-6 mb-9 md:flex-row md:justify-between md:mb-3 md:items-start lg:mb-8">
             <HeadLineSection

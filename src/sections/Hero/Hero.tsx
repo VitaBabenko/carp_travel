@@ -8,7 +8,10 @@ export const Hero = () => {
   const { spanHero, title, list, description, btnHero } = data.hero;
 
   return (
-    <section className={`${styles.bg_section} h-full overflow-hidden`}>
+    <section
+      id="hero"
+      className={`${styles.bg_section} h-full overflow-hidden`}
+    >
       <div className="container mx-auto">
         <div className="md:flex flex-row-reverse justify-between md:mb-[68px] lg:mb-[95px]">
           <div className="flex flex-col items-end">

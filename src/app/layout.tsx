@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Karantina } from "next/font/google";
 
 import { Header } from "@/components";
 import "./globals.css";
@@ -7,6 +7,11 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "700"],
+});
+
+const karantina = Karantina({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        <Header stylesFonts={karantina.className} />
         {children}
       </body>
     </html>

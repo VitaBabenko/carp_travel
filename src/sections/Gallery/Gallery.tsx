@@ -11,7 +11,7 @@ export const Gallery = () => {
   const { titleGallery } = data.gallery;
 
   return (
-    <section className={`${styles.bg_section}`}>
+    <section id="gallery" className={`${styles.bg_section}`}>
       <div className="container mx-auto">
         <h2 className="text-[40px] not-italic uppercase font-thin leading-[1.4] tracking-[-1.6px] text-main-color mb-6">
           {titleGallery.label}

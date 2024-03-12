@@ -14,7 +14,7 @@ export const About = () => {
   } = data.about;
 
   return (
-    <section className={styles.bg_section}>
+    <section id="about" className={styles.bg_section}>
       <div className="container mx-auto md:relative">
         <div className="flex flex-col gap-2 md:flex-row md:gap-[70px] md:mb-16 lg:gap-6 lg:mb-[72px]">
           <HeadLineSection
