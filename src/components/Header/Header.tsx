@@ -30,6 +30,22 @@ export const Header: React.FC<LogoProps> = ({ stylesFonts }) => {
   }, []);
 
   useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    };
+
+    if (isOpenMenu) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpenMenu, closeMenu]);
+
+  useEffect(() => {
     if (isOpenMenu) {
       document.body.style.overflow = "hidden";
     } else {
