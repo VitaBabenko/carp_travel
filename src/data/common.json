@@ -104,6 +104,13 @@
     }
   },
 
+  "services": {
+    "titleServices": {
+      "label": "we",
+      "labelSpan": "offer"
+    }
+  },
+
   "career": {
     "titleCareer": {
       "label": "Choose",
