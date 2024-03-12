@@ -1,4 +1,8 @@
-import { BtnJoin } from "@/components";
+"use client";
+
+import { Link } from "react-scroll";
+
+import { CustomBtn } from "@/components";
 
 import data from "@/data/common.json";
 
@@ -45,7 +49,18 @@ export const Hero = () => {
           <p className="text-[14px] not-italic font-extralight leading-[1.6] text-main-color text-justify md:text-[16px] md:absolute md:w-[230px] md:bottom-[75px] md:right-0 lg:text-[18px] lg:w-[294px] lg:bottom-[105px]">
             {description}
           </p>
-          <BtnJoin label={btnHero} />
+          <Link
+            to="contacts"
+            smooth={true}
+            duration={500}
+            className="mr-auto ml-auto md:mr-0 md:ml-0"
+          >
+            <CustomBtn
+              label={btnHero}
+              type={"button"}
+              btnStyle={`relative ${styles.btn_hero} text-[18px] not-italic font-bold leading-[2.7] text-main-color uppercase bg-white/[0.10] px-16 w-[280px] h-[53px] cursor-pointer hover:bg-white/[0.20] transition-all md:leading-[normal] md:h-[50px] md:w-[230px] lg:h-[71px] lg:w-[293px] lg:text-[32px]`}
+            />
+          </Link>
         </div>
       </div>
     </section>

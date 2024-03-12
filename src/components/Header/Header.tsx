@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import { useToggle } from "@/hook";
 
-import { Logo, NavBar, BtnMenu, MenuMobile } from "@/components";
+import { Logo, NavBar, CustomBtn, MenuMobile } from "@/components";
 
 import { LogoProps } from "@/types";
 
@@ -45,7 +45,12 @@ export const Header: React.FC<LogoProps> = ({ stylesFonts }) => {
       <div className="container mx-auto flex justify-between items-end">
         <Logo stylesFonts={stylesFonts} />
         {isMobile ? (
-          <BtnMenu label={btnMenu.open} onClickBtn={openMenu} />
+          <CustomBtn
+            label={btnMenu.open}
+            type={"button"}
+            onClick={openMenu}
+            btnStyle="font-normal leading-[normal] tracking-[1.4px] hover:underline focus:underline"
+          />
         ) : (
           <NavBar />
         )}

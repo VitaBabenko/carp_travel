@@ -21,9 +21,9 @@ export const CheckboxForm: React.FC<FormInputProps> = ({
         })}
       />
       {checkboxInput ? (
-        <Checked className="absolute left-0 w-[22px] h-[22px]" />
+        <Checked className="absolute left-[1px] w-[22px] h-[22px]" />
       ) : (
-        <Unchecked className="absolute left-0 w-[22px] h-[22px]" />
+        <Unchecked className="absolute left-[1px] w-[22px] h-[22px]" />
       )}
       {label}
       {errors?.checkbox && (

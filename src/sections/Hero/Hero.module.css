@@ -32,3 +32,49 @@
   content: "/";
   margin-left: 3px;
 }
+
+.btn_hero::before {
+  content: url("/icons/btn-join-left-mobile.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 53px;
+}
+
+.btn_hero::after {
+  content: url("/icons/btn-join-right-mobile.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 53px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn_hero::before {
+    content: url("/icons/btn-join-left-tablet.svg");
+    width: 35px;
+    height: 50px;
+  }
+
+  .btn_hero::after {
+    content: url("/icons/btn-join-right-tablet.svg");
+    width: 35px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn_hero::before {
+    content: url("/icons/btn-join-left-desktop.svg");
+    width: 44px;
+    height: 71px;
+  }
+
+  .btn_hero::after {
+    content: url("/icons/btn-join-right-desktop.svg");
+    width: 44px;
+    height: 71px;
+  }
+}

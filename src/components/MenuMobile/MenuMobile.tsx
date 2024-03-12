@@ -1,6 +1,6 @@
 "use client";
 
-import { NavBar, BtnMenu } from "@/components";
+import { NavBar, CustomBtn } from "@/components";
 
 import data from "@/data/common.json";
 
@@ -15,10 +15,11 @@ export const MenuMobile: React.FC<MenuProps> = ({ onClickBtn }) => {
     <div className="fixed top-0 left-0 z-50 w-[100%] h-[100%] bg-black/[0.5]">
       <div className={`${styles.modal}`}>
         <div className="px-[117px] py-[170px]">
-          <BtnMenu
+          <CustomBtn
             label={btnMenu.close}
-            onClickBtn={onClickBtn}
-            btnStyle="absolute top-[43px] right-[20px]"
+            type={"button"}
+            onClick={onClickBtn}
+            btnStyle="absolute top-[43px] right-[20px] font-normal leading-[normal] tracking-[1.4px] hover:underline focus:underline"
           />
           <NavBar onClickBtn={onClickBtn} />
         </div>
