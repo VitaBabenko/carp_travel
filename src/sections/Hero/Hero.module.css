@@ -16,14 +16,14 @@
         rgba(0, 37, 49, 0) 100%
       ),
       url("~/public/images/bg-images/bg-hero.webp");
-    padding-top: 124px;
+    padding-top: 154px;
     padding-bottom: 64px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .bg_section {
-    padding-top: 130px;
+    padding-top: 170px;
     padding-bottom: 104px;
   }
 }

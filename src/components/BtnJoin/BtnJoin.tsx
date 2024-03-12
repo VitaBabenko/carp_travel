@@ -2,11 +2,11 @@
 
 import { Link } from "react-scroll";
 
-import { HeroBtnProps } from "@/types";
+import { BtnProps } from "@/types";
 
 import styles from "./BtnJoin.module.css";
 
-export const BtnJoin: React.FC<HeroBtnProps> = ({ label }) => {
+export const BtnJoin: React.FC<BtnProps> = ({ label }) => {
   return (
     <Link to="contacts" smooth={true} duration={500}>
       <button
