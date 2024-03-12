@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "number": "01/05",
+    "label": "ATVs Traveling",
+    "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+    "bgImg": "/images/services/bg-services1.webp",
+    "img": "/images/services/services1.webp",
+    "alt": "ATVs Traveling"
+  },
+  {
+    "id": 2,
+    "number": "02/05",
+    "label": "Rock climbing",
+    "description": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
+    "bgImg": "/images/services/bg-services2.webp",
+    "img": "/images/services/services2.webp",
+    "alt": "Rock climbing"
+  },
+  {
+    "id": 3,
+    "number": "03/05",
+    "label": "Hot air ballooning",
+    "description": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
+    "bgImg": "/images/services/bg-services3.webp",
+    "img": "/images/services/services3.webp",
+    "alt": "Hot air ballooning"
+  },
+  {
+    "id": 4,
+    "number": "04/05",
+    "label": "Skydiving",
+    "description": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
+    "bgImg": "/images/services/bg-services4.webp",
+    "img": "/images/services/services4.webp",
+    "alt": "Skydiving"
+  },
+  {
+    "id": 5,
+    "number": "05/05",
+    "label": "Rafting",
+    "description": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
+    "bgImg": "/images/services/bg-services5.webp",
+    "img": "/images/services/services5.webp",
+    "alt": "Rafting"
+  }
+]
