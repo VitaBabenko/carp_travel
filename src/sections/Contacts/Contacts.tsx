@@ -9,7 +9,7 @@ export const Contacts = () => {
 
   return (
     <section id="contacts" className={`${styles.bg_section} h-full`}>
-      <div className="container mx-auto">
+      <div className="container xs:max-w-full sm:w-[480px] md:w-[768px] lg:w-[1280px] xl:w-[1440px]">
         <HeadLineSection
           stylesTitle="mb-9 lg:mb-[71px]"
           label={titleContacts.label}

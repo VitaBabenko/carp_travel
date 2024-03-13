@@ -2,8 +2,6 @@
 
 import { Link } from "react-scroll";
 
-import { CustomBtn } from "@/components";
-
 import data from "@/data/common.json";
 
 import styles from "./Hero.module.css";
@@ -16,7 +14,7 @@ export const Hero = () => {
       id="hero"
       className={`${styles.bg_section} h-full overflow-hidden`}
     >
-      <div className="container mx-auto">
+      <div className="container xs:max-w-full sm:w-[480px] md:w-[768px] lg:w-[1280px] xl:w-[1440px]">
         <div className="md:flex flex-row-reverse justify-between md:mb-[68px] lg:mb-[95px]">
           <div className="flex flex-col items-end">
             <div className="text-[37px] not-italic uppercase font-medium leading-[normal] text-main-color md:text-[67px] lg:text-[98px]">
@@ -53,13 +51,9 @@ export const Hero = () => {
             to="contacts"
             smooth={true}
             duration={500}
-            className="mr-auto ml-auto md:mr-0 md:ml-0"
+            className={`relative block text-center mr-auto ml-auto ${styles.btn_hero} text-[18px] not-italic font-bold leading-[2.7] text-main-color uppercase bg-white/[0.10] px-16 w-[280px] h-[53px] cursor-pointer hover:bg-white/[0.20] focus:bg-white/[0.20] outline-none focus:outline-blue-500 transition-all md:leading-[normal] md:h-[50px] md:w-[230px] md:py-3 lg:h-[71px] lg:w-[293px] lg:text-[32px]`}
           >
-            <CustomBtn
-              label={btnHero}
-              type={"button"}
-              btnStyle={`relative ${styles.btn_hero} text-[18px] not-italic font-bold leading-[2.7] text-main-color uppercase bg-white/[0.10] px-16 w-[280px] h-[53px] cursor-pointer hover:bg-white/[0.20] transition-all md:leading-[normal] md:h-[50px] md:w-[230px] lg:h-[71px] lg:w-[293px] lg:text-[32px]`}
-            />
+            {btnHero}
           </Link>
         </div>
       </div>

@@ -16,14 +16,10 @@ export const Career = () => {
 
   return (
     <>
-      <section
-        id="career"
-        className={`${styles.bg_section} h-full overflow-hidden`}
-      >
-        <div className="container mx-auto">
+      <section id="career" className={`${styles.bg_section} h-full`}>
+        <div className="container xs:max-w-full sm:w-[480px] md:w-[768px] lg:w-[1280px] xl:w-[1440px]">
           <div className="flex flex-col gap-6 mb-9 md:flex-row md:justify-between md:mb-3 md:items-start lg:mb-8">
             <HeadLineSection
-              stylesTitle=""
               label={titleCareer.label}
               labelSpan={titleCareer.labelSpan}
             />
@@ -69,7 +65,7 @@ export const Career = () => {
       <section
         className={`${styles.bg_section} h-full overflow-hidden md:hidden`}
       >
-        <div className="container mx-auto">
+        <div className="container xs:max-w-full sm:w-[480px] md:w-[768px] lg:w-[1280px] xl:w-[1440px]">
           <h3 className="text-[14px] not-italic leading-5 font-extralight text-main-color w-[179px] mr-0 ml-auto">
             {titleFirstForm}
           </h3>

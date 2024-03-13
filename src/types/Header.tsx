@@ -1,10 +1,10 @@
 export type LogoProps = {
-  stylesFonts: string;
   logo?: {
-    icon: string | undefined;
-    alt: string | undefined;
-    path: string | undefined;
-    label: string | undefined;
+    icon1: string;
+    icon2: string;
+    alt: string;
+    path: string;
+    label: string;
   };
 };
 
