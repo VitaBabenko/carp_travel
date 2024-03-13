@@ -12,6 +12,8 @@ export const ContactsInfo = () => {
             <li>
               <Link
                 href={`tel:${listContacts.phone.firstPhone}`}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
                 className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
               >
                 {listContacts.phone.firstPhone}
@@ -20,6 +22,8 @@ export const ContactsInfo = () => {
             <li>
               <Link
                 href={`tel:${listContacts.phone.secondPhone}`}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
                 className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
               >
                 {listContacts.phone.secondPhone}
@@ -33,6 +37,8 @@ export const ContactsInfo = () => {
         <li className="flex gap-[20px] justify-end mb-[26px] lg:mb-[100px]">
           <Link
             href={`mailto:${listContacts.email.firstEmail}`}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
             className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
           >
             {listContacts.email.firstEmail}
@@ -51,6 +57,7 @@ export const ContactsInfo = () => {
             <Link
               href={`https://www.${listContacts.socials.firstSocial}.com`}
               target="_blank"
+              rel="noopener noreferrer nofollow"
               className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
             >
               {listContacts.socials.firstSocial}
@@ -60,6 +67,7 @@ export const ContactsInfo = () => {
             <Link
               href={`https://www.${listContacts.socials.secondSocial}.com`}
               target="_blank"
+              rel="noopener noreferrer nofollow"
               className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
             >
               {listContacts.socials.secondSocial}
@@ -69,6 +77,7 @@ export const ContactsInfo = () => {
             <Link
               href={`https://www.${listContacts.socials.thirdSocial}.com`}
               target="_blank"
+              rel="noopener noreferrer nofollow"
               className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
             >
               {listContacts.socials.thirdSocial}
@@ -78,6 +87,7 @@ export const ContactsInfo = () => {
             <Link
               href={`https://www.${listContacts.socials.forthSocial}.com/`}
               target="_blank"
+              rel="noopener noreferrer nofollow"
               className="text-[14px] not-italic font-normal leading-6 text-main-color hover:underline focus:underline md:text-[16px]"
             >
               {listContacts.socials.forthSocial}

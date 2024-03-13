@@ -9,7 +9,7 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      xs: "100vw",
+      xs: "320px",
       sm: "480px",
       md: "768px",
       lg: "1280px",
@@ -17,7 +17,9 @@ const config: Config = {
     },
     extend: {
       container: {
+        center: true,
         padding: {
+          DEFAULT: "16px",
           xs: "20px",
           sm: "20px",
           md: "32px",
@@ -30,7 +32,7 @@ const config: Config = {
         "error-color": "#FF5757",
       },
       transitionDuration: {
-        default: "250ms",
+        default: "300ms",
       },
       transitionTimingFunction: {
         default: "cubic-bezier(0.3, 0, 0.2, 1)",

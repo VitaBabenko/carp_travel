@@ -14,10 +14,10 @@ export const NavBar: React.FC<MenuProps> = ({ onClickBtn }) => {
       {navLinks.map(({ id, path, label }) => (
         <li key={id}>
           <Link
-            onClick={onClickBtn}
             to={path}
             smooth={true}
             duration={500}
+            onClick={onClickBtn}
             className="text-[18px] not-italic font-normal leading-[normal] tracking-[1.8px] md:tracking-[1.4px] text-main-color hover:underline focus:underline cursor-pointer md:text-[14px]"
           >
             {label}

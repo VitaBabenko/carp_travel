@@ -12,7 +12,7 @@ export const Gallery = () => {
 
   return (
     <section id="gallery" className={`${styles.bg_section}`}>
-      <div className="container mx-auto">
+      <div className="container xs:max-w-full sm:w-[480px] md:w-[768px] lg:w-[1280px] xl:w-[1440px]">
         <h2 className="text-[40px] not-italic uppercase font-thin leading-[1.4] tracking-[-1.6px] text-main-color mb-6">
           {titleGallery.label}
           <span className="font-medium ml-2">{titleGallery.labelSpan}</span>

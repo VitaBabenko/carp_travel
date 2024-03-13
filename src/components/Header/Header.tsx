@@ -6,11 +6,9 @@ import { useToggle } from "@/hook";
 
 import { Logo, NavBar, CustomBtn, MenuMobile } from "@/components";
 
-import { LogoProps } from "@/types";
-
 import data from "@/data/common.json";
 
-export const Header: React.FC<LogoProps> = ({ stylesFonts }) => {
+export const Header = () => {
   const { btnMenu } = data.header;
   const [isMobile, setIsMobile] = useState(false);
   const { isOpenMenu, openMenu, closeMenu } = useToggle(false);
@@ -58,8 +56,8 @@ export const Header: React.FC<LogoProps> = ({ stylesFonts }) => {
 
   return (
     <header className="absolute pt-[25px] w-[100%]">
-      <div className="container mx-auto flex justify-between items-end">
-        <Logo stylesFonts={stylesFonts} />
+      <div className="container xs:max-w-full sm:w-[480px] md:w-[768px] lg:w-[1280px] xl:w-[1440px] flex justify-between items-end">
+        <Logo />
         {isMobile ? (
           <CustomBtn
             label={btnMenu.open}

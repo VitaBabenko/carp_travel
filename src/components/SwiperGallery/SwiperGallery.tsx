@@ -51,7 +51,13 @@ export const SwiperGallery: React.FC<SwiperGalleryProps> = ({ gallery }) => {
                         : "md:h-[87px] md:w-[121px] lg:h-[225px] lg:w-[313px]"
                     }  `}
               >
-                <Image src={img} alt={alt} fill className="object-cover" />
+                <Image
+                  src={img}
+                  alt={alt}
+                  fill
+                  priority
+                  className="object-cover"
+                />
               </div>
             )}
           </SwiperSlide>

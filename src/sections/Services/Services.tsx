@@ -63,7 +63,7 @@ export const Services = () => {
                     backgroundPositionX: "75%",
                   }}
                 >
-                  <div className="container mx-auto">
+                  <div className="container xs:max-w-full sm:w-[480px] md:w-[768px] lg:w-[1280px] xl:w-[1440px]">
                     <div className="md:flex md:justify-between md:mb-9 md:relative lg:mb-5">
                       <HeadLineSection
                         stylesTitle="mb-[24px] md:mb-0"
@@ -81,6 +81,7 @@ export const Services = () => {
                         alt={alt}
                         width={607}
                         height={429}
+                        priority
                         className="block w-full min-h-[213px] h-full object-cover md:w-[463px] xl:w-[607px]"
                       />
                       <p className="text-[12px] not-italic font-extralight leading-6 tracking-[2.4px] text-main-color mt-3 text-end md:absolute md:top-[50%] md:left-[68.5%] lg:hidden">

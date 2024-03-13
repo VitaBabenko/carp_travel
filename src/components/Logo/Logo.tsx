@@ -4,11 +4,9 @@ import Image from "next/image";
 
 import { Link } from "react-scroll";
 
-import { LogoProps } from "@/types";
-
 import data from "@/data/common.json";
 
-export const Logo: React.FC<LogoProps> = ({ stylesFonts }) => {
+export const Logo = () => {
   const { logo } = data.header;
 
   return (
@@ -16,14 +14,11 @@ export const Logo: React.FC<LogoProps> = ({ stylesFonts }) => {
       to={logo.path}
       smooth={true}
       duration={500}
+      aria-label="logo"
       className="cursor-pointer flex flex-col gap-[2px]"
     >
-      <Image src={logo.icon} alt={logo.alt} width={61} height={22} />
-      <p
-        className={`${stylesFonts} text-[14px not-italic leading-[normal] tracking-[2.59px] text-main-color hover:underline`}
-      >
-        {logo.label}
-      </p>
+      <Image src={logo.icon1} alt={logo.alt} width={61} height={22} priority />
+      <Image src={logo.icon2} alt={logo.alt} width={61} height={10} priority />
     </Link>
   );
 };

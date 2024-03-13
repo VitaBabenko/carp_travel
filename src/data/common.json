@@ -1,7 +1,8 @@
 {
   "header": {
     "logo": {
-      "icon": "/icons/logo.svg",
+      "icon1": "/icons/logo.svg",
+      "icon2": "/icons/CarpTravel.svg",
       "alt": "logo icon",
       "path": "hero",
       "label": "CarpTravel"
