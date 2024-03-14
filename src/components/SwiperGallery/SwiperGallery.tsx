@@ -43,7 +43,7 @@ export const SwiperGallery: React.FC<SwiperGalleryProps> = ({ gallery }) => {
         {gallery.map(({ id, img, alt }) => (
           <SwiperSlide key={id}>
             {({ isActive }) => (
-              <li
+              <div
                 className={`md:w-[458px] md:h-[187px] md:mx-auto lg:w-[606px] lg:h-[429px]
                     ${
                       !isActive
@@ -58,7 +58,7 @@ export const SwiperGallery: React.FC<SwiperGalleryProps> = ({ gallery }) => {
                   priority
                   className="object-cover"
                 />
-              </li>
+              </div>
             )}
           </SwiperSlide>
         ))}
