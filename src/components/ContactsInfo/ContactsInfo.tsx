@@ -6,7 +6,7 @@ export const ContactsInfo = () => {
 
   return (
     <ul className="flex flex-col mb-[12px] md:flex-row md:gap-[90px] md:mb-14 lg:flex-col lg:mb-0">
-      <div>
+      <>
         <li className="flex gap-[20px] justify-end mb-6 lg:mb-14">
           <ul>
             <li>
@@ -47,7 +47,7 @@ export const ContactsInfo = () => {
             {listContacts.email.label}
           </p>
         </li>
-      </div>
+      </>
       <li className="flex gap-[20px] justify-end lg:flex-row-reverse lg:justify-start">
         <p className="text-[12px] not-italic font-extralight leading-5 text-main-color lg:w-[81px]">
           {listContacts.socials.label}
