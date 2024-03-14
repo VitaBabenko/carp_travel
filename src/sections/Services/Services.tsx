@@ -96,7 +96,7 @@ export const Services = () => {
                                   type={"button"}
                                   onClick={() => handleClickSl(index)}
                                   label={label}
-                                  btnStyle={`text-[20px] not-italic leading-[0.85] uppercase text-left text-main-color font-extralight hover:opacity-100 md:text-[22px] lg:text-[28px] ${
+                                  btnStyle={`text-[20px] not-italic leading-[0.85] uppercase text-left text-main-color font-extralight hover:opacity-100 hover:ml-[14px] transition-all md:text-[22px] lg:text-[28px] ${
                                     index === activeSl
                                       ? `ml-[14px] font-medium opacity-100 ${styles.list_item}`
                                       : "opacity-50"

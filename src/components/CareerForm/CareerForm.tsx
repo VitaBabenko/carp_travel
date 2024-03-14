@@ -90,7 +90,7 @@ export const CareerForm = () => {
                     <PatternFormat
                       aria-required="true"
                       aria-invalid={errors.phone ? "true" : "false"}
-                      className="w-[100%] bg-white/[0.05]  pl-2 pr-[50px] text-[20px] not-italic font-extralight leading-6 placeholder:text-[20px] placeholder:opacity-[0.2] md:w-[221px] lg:w-[260px] xl:w-[290px]"
+                      className="w-[100%] bg-white/[0.05]  pl-2 pr-[50px] text-[20px] not-italic font-extralight leading-6 placeholder:text-[20px] placeholder:opacity-[0.2] md:w-[221px] lg:w-[260px] xl:w-[290px] focus:outline-none focus:outline-error-color"
                       style={{
                         color: errors.phone ? "#FF5757" : "#FFF",
                       }}

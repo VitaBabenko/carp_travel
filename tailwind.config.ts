@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+import plugin from "tailwindcss/plugin";
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -39,6 +41,28 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }: { addUtilities: any }) {
+      addUtilities({
+        ".hover": {
+          position: "relative",
+        },
+        ".hover::after": {
+          content: "''",
+          position: "absolute",
+          bottom: "-3px",
+          left: "0",
+          width: "100%",
+          height: "1px",
+          backgroundColor: "#fff",
+          transform: "scaleX(0)",
+          transition: "transform 0.25s ease-in-out",
+        },
+        ".hover:hover::after": {
+          transform: "scaleX(1)",
+        },
+      });
+    }),
+  ],
 };
 export default config;

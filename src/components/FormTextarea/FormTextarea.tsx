@@ -12,7 +12,7 @@ export const FormTextarea: React.FC<FormInputProps> = ({
         {label}
       </label>
       <textarea
-        className={`${stylesForm} resize-none bg-white/[0.05] pl-2 pr-2 text-[20px] not-italic font-extralight leading-6 text-main-color`}
+        className={`${stylesForm} resize-none bg-white/[0.05] pl-2 pr-2 text-[20px] not-italic font-extralight leading-6 text-main-color focus:outline-error-color`}
         {...register(name)}
       />
     </div>
