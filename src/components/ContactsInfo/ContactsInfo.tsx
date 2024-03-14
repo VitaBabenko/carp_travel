@@ -4,6 +4,16 @@ import data from "@/data/common.json";
 export const ContactsInfo = () => {
   const { listContacts } = data.contacts;
 
+  const formatPhoneNumber = (phoneNumber: string) => {
+    const cleanNumber = phoneNumber.replace(/[^\d]/g, "");
+    const parts = cleanNumber.match(/^(\d{2})(\d{3})(\d{2})(\d{2})(\d{3})$/);
+    if (parts !== null) {
+      const formattedNumber = `+${parts[1]} (${parts[2]}) ${parts[3]} ${parts[4]} ${parts[5]}`;
+
+      return formattedNumber;
+    }
+  };
+
   return (
     <ul className="flex flex-col mb-[12px] md:flex-row md:gap-[90px] md:mb-14 lg:flex-col lg:mb-0">
       <>
@@ -16,7 +26,7 @@ export const ContactsInfo = () => {
                 rel="noopener noreferrer nofollow"
                 className="text-[14px] not-italic font-normal leading-6 text-main-color md:text-[16px] hover focus:outline-error-color"
               >
-                {listContacts.phone.firstPhone}
+                {formatPhoneNumber(listContacts.phone.firstPhone)}
               </Link>
             </li>
             <li>
@@ -26,7 +36,7 @@ export const ContactsInfo = () => {
                 rel="noopener noreferrer nofollow"
                 className="text-[14px] not-italic font-normal leading-6 text-main-color md:text-[16px] hover focus:outline-error-color"
               >
-                {listContacts.phone.secondPhone}
+                {formatPhoneNumber(listContacts.phone.secondPhone)}
               </Link>
             </li>
           </ul>

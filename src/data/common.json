@@ -160,8 +160,8 @@
     "listContacts": {
       "phone": {
         "label": "Phone number",
-        "firstPhone": "+38 (098) 12 34 567",
-        "secondPhone": "+38 (073) 12 34 567"
+        "firstPhone": "+380981234567",
+        "secondPhone": "+380731234567"
       },
       "email": {
         "label": "E-mail",
