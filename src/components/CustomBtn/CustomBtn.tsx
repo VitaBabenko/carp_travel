@@ -12,7 +12,7 @@ export const CustomBtn: React.FC<BtnProps> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`${btnStyle} block text-[14px] not-italic text-main-color uppercase`}
+      className={`${btnStyle} block text-[14px] not-italic text-main-color uppercase focus:outline-error-color`}
     >
       {label}
     </button>

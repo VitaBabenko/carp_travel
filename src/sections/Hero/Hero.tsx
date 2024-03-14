@@ -49,9 +49,10 @@ export const Hero = () => {
           </p>
           <Link
             to="contacts"
+            href="#"
             smooth={true}
             duration={500}
-            className={`relative block text-center mr-auto ml-auto ${styles.btn_hero} text-[18px] not-italic font-bold leading-[2.7] text-main-color uppercase bg-white/[0.10] px-16 w-[280px] h-[53px] cursor-pointer hover:bg-white/[0.20] focus:bg-white/[0.20] outline-none focus:outline-blue-500 transition-all md:leading-[normal] md:h-[50px] md:w-[230px] md:py-3 lg:h-[71px] lg:w-[293px] lg:text-[32px]`}
+            className={`relative block text-center mr-auto ml-auto ${styles.btn_hero} text-[18px] not-italic font-bold leading-[2.7] text-main-color uppercase bg-white/[0.10] px-16 py-[4px] w-[280px] h-[53px] hover:bg-white/[0.20] md:leading-[normal] md:h-[50px] md:w-[230px] md:py-3 lg:h-[71px] lg:w-[293px] lg:text-[32px] focus:outline-error-color`}
           >
             {btnHero}
           </Link>
