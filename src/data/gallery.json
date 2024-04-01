@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "img": "/images/gallery/gallery-mountains.webp",
+    "img": "/images/gallery/gallery-mountains@2x.webp",
     "alt": "mountains picture"
   },
   {
     "id": 2,
-    "img": "/images/gallery/gallery-lake.webp",
+    "img": "/images/gallery/gallery-lake@2x.webp",
     "alt": "lake picture"
   },
   {
     "id": 3,
-    "img": "/images/gallery/gallery-forest.webp",
+    "img": "/images/gallery/gallery-forest@2x.webp",
     "alt": "forest picture"
   }
 ]

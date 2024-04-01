@@ -1,6 +1,6 @@
 .bg_section {
   background-image: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%),
-    url("~/public/images/bg-images/bg-about-tablet.webp");
+    url("~/public/images/bg-images/bg-about-tablet@2x.webp");
   background-repeat: no-repeat;
   background-position-x: 25%;
   background-size: cover;
@@ -21,7 +21,7 @@
         #001826 0%,
         rgba(0, 37, 49, 0) 100%
       ),
-      url("~/public/images/bg-images/bg-about.webp");
+      url("~/public/images/bg-images/bg-about@2x.webp");
     background-repeat: no-repeat;
     background-position-x: 15%;
     background-size: cover;
