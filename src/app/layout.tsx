@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://carp-travel-beige.vercel.app",
     siteName: "CarpTravel",
     type: "website",
-    images: [{ url: "/ogp/carptravel.webp" }],
+    images: [{ url: "/ogp/carptravel@2x.webp" }],
   },
 };
 

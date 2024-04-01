@@ -18,8 +18,8 @@ export const Logo = () => {
       aria-label="logo"
       className="cursor-pointer flex flex-col gap-[2px] focus:outline-error-color hover"
     >
-      <Image src={logo.icon1} alt={logo.alt} width={61} height={22} priority />
-      <Image src={logo.icon2} alt={logo.alt} width={61} height={10} priority />
+      <Image src={logo.icon1} alt={logo.alt} width={61} height={22} />
+      <Image src={logo.icon2} alt={logo.alt} width={61} height={10} />
     </Link>
   );
 };

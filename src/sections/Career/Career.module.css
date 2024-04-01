@@ -1,6 +1,6 @@
 .bg_section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
-    url("~/public/images/bg-images/bg-career-mobile.webp");
+    url("~/public/images/bg-images/bg-career-mobile@2x.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
